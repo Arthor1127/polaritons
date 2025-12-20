@@ -1,0 +1,29 @@
+# Data
+data/raw/
+data/processed/
+
+# Figures
+figures/src/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Jupyter Book
+book/_build/
+
+# OS
+.DS_Store
