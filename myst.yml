@@ -16,7 +16,7 @@ project:
   github: https://github.com/Arthor1127/polaritons
   toc:
     - file: README.md
-    - file: book/intro.md
+    - file: intro.md
     - title: Data
       children:
         - file: data/README.md
@@ -49,7 +49,8 @@ project:
 site:
   template: book-theme
   options:
-    logo: book/polariton_heterostructure.png
+    logo: figures/export/polariton_heterostructure.png
+    favicon: figures/export/polariton_heterostructure.png
   domains:
     - polaritons-arthor1127.curve.space
 
