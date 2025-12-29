@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: bf6f8eed-fba2-47de-89ad-5f5b0169de5d
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/Arthor1127/polaritons
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png

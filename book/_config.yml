@@ -1,4 +1,8 @@
-title: "polaritons"
-author: "Arturo Ruiz"
+title: Polaritons Research
+author: Ruiz
 execute:
-  execute_notebooks: auto
+  execute_notebooks: cache
+
+sphinx:
+  extra_extensions:
+    - sphinx.ext.mathjax

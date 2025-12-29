@@ -1,0 +1,92 @@
+```ini
+# ==================================================
+# Two-site polariton system with phonon
+# Random initial conditions
+# Zero reservoir power (set in C++)
+# ==================================================
+
+[global]
+time = 0.0
+random_seed = auto    # or fixed integer for reproducibility
+
+
+# ==================================================
+# Polariton modes
+# ==================================================
+
+[polariton site_1]
+U = 0.0
+gamma = 1.0
+
+initial_real = uniform(-1.0, 1.0)
+initial_imag = uniform(-1.0, 1.0)
+
+
+[polariton site_2]
+U = 0.0
+gamma = 1.0
+
+initial_real = uniform(-1.0, 1.0)
+initial_imag = uniform(-1.0, 1.0)
+
+
+# ==================================================
+# Reservoirs (ZERO power here)
+# ==================================================
+
+[reservoir site_2_res]
+target = site_2
+coupling = 1.0
+tau = 600
+power = 0.0
+alpha = 3.25
+n0 = uniform(0.1, 0.6)
+
+
+# ==================================================
+# Phonon mode
+# ==================================================
+
+[phonon phonon_1]
+omega = 20.0
+gamma = 0.05
+
+initial_position = uniform(-10.0, 10.0)
+initial_velocity = uniform(-200.0, 200.0)
+
+
+# ==================================================
+# Polariton–polariton coupling via phonon
+# ==================================================
+
+[coupling site_1_to_site_2]
+from = site_1
+to = site_2
+phonon = phonon_1
+J = 0.0
+g = 1.0
+delta = 0.0
+above = true
+
+
+[coupling site_2_to_site_1]
+from = site_2
+to = site_1
+phonon = phonon_1
+J = 0.0
+g = 1.0
+delta = 0.0
+above = false
+
+
+# ==================================================
+# Phonon pairing
+# ==================================================
+
+[pairing phonon_pair]
+phonon = phonon_1
+sites = site_1, site_2
+delta = 0.0
+g = 1.0
+
+```

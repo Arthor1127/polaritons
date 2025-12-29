@@ -1,0 +1,44 @@
+The code implementation (ODEs) works in the rotating frame of equations. I want to implement a user interface that's not in the rotating frame (and also is not normalized as it's right now). For that modify the cavity_config.h (see pasted content, it should match what you have in memory) and consider the following changes:
+
+
+
+PolaritonMode creation in .build file:
+
+keep it as it's, add another parameter: omega (polariton energy)
+
+
+
+When creating the PolaritonMode in the header don't use this parameter (omega) for anything, it will be used later when writing down the equations. 
+
+
+
+When connecting two polaritons  through a phonon, the above parameter should be set according to whether the polariton the connection is done from has higher energy than the other and viceversa. If they have the same energy, you may throw a warning (but not an error) and also use above for both. The delta parameter in this case should be calculated as 
+
+
+
+delta = omega(from) - omega(to) - omega(phonon).  
+
+
+
+also when adding the phonon pairing, delta should be calculated by
+
+delta = omega(1st argument) - omega(2nd argument) - omega(phonon)
+
+
+
+The normalization should be the following. Define the median value of the following quantities by listing all the parameters of all the system components when building the cavity:
+
+
+
+gamma(polaritons) = gamma*
+
+Gamma(phonons) = Gamma* 
+
+Omega(phonons) = 
+
+phononic coupling constants
+
+
+
+
+

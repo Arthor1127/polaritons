@@ -1,0 +1,4 @@
+# Weekly report (12/22 - 12/28)
+Progress this week has been done by creating the `polariton.h` and `cavity_config.h` `C++` headers. These headers provide a high level interface for the numerical modeling of driven-dissipative polaritonic lattices. In contrast to previous numerical implementations, generation of arbitrary lattice topologies is done easily with an object oriented approach. With this approach ODEs are not explicitly written in the program but are generated through the creation of `PolaritonMode` and `PhononMode` objects which are then coupled to each other. Some features are to be implemented later like live parameter modification and plotting and also Fourier and Lyapunov analysis. However, as it is today, the headers constitute a full working tool to be used on this research.
+
+We hope that the creation of these functions can render further research to be more straightforward.

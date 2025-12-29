@@ -1,7 +1,7 @@
 # Data
 data/raw/
 data/processed/
-
+*.dat
 # Figures
 figures/src/
 
@@ -27,3 +27,6 @@ book/_build/
 
 # OS
 .DS_Store
+
+# MyST build outputs
+_build
