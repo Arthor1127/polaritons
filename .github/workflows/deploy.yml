@@ -32,12 +32,9 @@ jobs:
       - name: Build the book
         run: |
           jupyter-book build --html
-      
-      # Add .nojekyll file
-      - name: Add .nojekyll
-        run: |
           touch _build/html/.nojekyll
-          ls -la _build/html/ | head -20
+          echo ".nojekyll file created"
+          ls -la _build/html/.nojekyll
       
       # Upload the book's HTML as an artifact
       - name: Upload artifact
