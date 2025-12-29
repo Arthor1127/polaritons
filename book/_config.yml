@@ -1,5 +1,6 @@
-title: Polaritons Research
-author: Ruiz
+title: Cavity Polaritons Research
+author: Arturo Ruiz
+logo: polariton_heterostructure.png
 execute:
   execute_notebooks: cache
 

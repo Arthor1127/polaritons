@@ -3,4 +3,3 @@ root: intro
 chapters:
   - file: notebooks/exploration/two_site_resonant
   - file: notebooks/exploration/two_site_non_resonant
-EOF
