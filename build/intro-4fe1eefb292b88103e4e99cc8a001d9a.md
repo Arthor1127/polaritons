@@ -1,0 +1,37 @@
+:::{figure} #fig-polariton-cavity
+:name: fig-polariton-cavity
+<div style="text-align: center;">
+<table style="margin: auto; border: none;">
+<tr>
+<td style="border: none; vertical-align: top;"><img src="figures/export/full_polariton_heterostructure.png" style="width: 100%;"/></td>
+<td style="border: none; vertical-align: top;"><img src="figures/export/drivings_branches.png" style="width: 100%;"/></td>
+</tr>
+<tr>
+<td style="border: none; vertical-align: top;"><img src="figures/export/reflection_coeff.png" style="width: 100%;"/></td>
+<td style="border: none; vertical-align: top;"><img src="figures/export/cascade_squares.png" style="width: 100%;"/></td>
+</tr>
+</table>
+<p style="text-align: center; max-width: 800px; margin: 20px auto;">
+<strong>(a)</strong> Semiconductor heterostructure that serves as a cavity as it confines both light and phononic modes. Exciton confinement is provided by the introduction of quantum wells.
+<strong>(b)</strong> Schematic of the polariton branches. The reservoir's and condensate's relaxation dynamics are shown and both driving schemes are contrasted.  
+<strong>(c)</strong> Reflection spectrum for the light and sound inside the heterostructure. A stopband with a middle dip is provided by the Bragg reflector.  
+<strong>(d)</strong> Energy schematic of the polariton modes present at a heterostructure with square geometry.
+</p>
+</div>
+:::
+
+# Details of the model
+The topic of this research project is the study of the population, energy and stability dynamics of cavity polariton arrays optomechanically coupled via cavity phonons. Schematically the process creates exciton-polaritons by cascading down a ladder of polaritonic states via phonon emission. The initial polaritonic population is generated via coherent or incoherent pumping on a state of high energy. Due to the backaction between the polaritonic and phononic field, the outcome of this whole process is the coherent phonon generation in the cavity thus rendering this system as a phonon cascade laser (PCQL).
+
+Modeling of non-equilibrium Bose-Einstein condensates [(Wouters2007)](https://doi.org/10.1103/PhysRevLett.99.140402) of this sort is done using a generalized Gross-Pitaevskii equation:
+(gpe-equation)=
+$$
+i \frac{\partial \psi}{\partial t} = \left\{ -\frac{\hbar \nabla^2}{2m_{LP}} + \frac{i}{2}[R(n_R) - \gamma] + U \vert \psi \vert^2\right\}\psi + F(\vec r, t),
+$$
+whose main feautures that separate it from a traditional Schrödinger equation is the introduction of dissipative, self interaction (Hartree), and driving terms. For the latter the condensate can be subject to incoherent (non resonant) driving by means of an exciton reservoir whose population relaxes by many mechanisms through the lower polariton branch. This process is described phenomenologically by an independent equation for the reservoir population:
+(reservoir-equation)=
+$$
+\frac{\partial n_R}{\partial t} = P - \gamma_R n_R - R(n_R)\vert \psi(\vec r) \vert^2 + D \nabla^2 n_R
+$$
+where $P$ is the rate of increase in the reservoir population given by the driving. In general relaxation times in reservoirs are much shorter than that of exciton-polaritons, and thus an adiabatic approximation is valid ($\partial_t n_R = 0$). Alternatively coherent driving at the condensate's resonant frequency can be supplied by $F(\vec r, t) \propto e^{i\omega_d t}$. Condensate-reservoir coupling is introuduced by the function $R(n_R)$, for the purposes of this research we'll consider a linear coupling given by $R(n_R) = R\times n_R$ where $R$ measures the strength of such coupling.
+
