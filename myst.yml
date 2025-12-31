@@ -2,16 +2,6 @@ version: 1
 project:
   id: 999f80da-5358-4750-a4f4-b1d9ab1c1ddb
   title: Cavity Polaritons Research
-  authors:
-  - name: Arturo Ruiz
-    affiliations:
-      - Instituto Balseiro
-      - Comisión Nacional de Energía Atómica
-  - name: Gonzalo Usaj
-    affiliations:
-      - Instituto Balseiro
-      - Comisión Nacional de Energía Atómica
-      - CONICET
   description: Documentation site for the research on polariton arrays with optomechanical coupling
   github: https://github.com/Arthor1127/polaritons
   toc:
@@ -31,6 +21,9 @@ project:
             - file: notebooks/exploration/cpp_notebook.ipynb
             - file: notebooks/exploration/two_site_non_resonant.ipynb
             - file: notebooks/exploration/two_site_resonant.ipynb
+        - title: Analysis
+          children:
+            - file: notebooks/analysis/new_notebook.ipynb
     - title: Notes
       children:
         - file: notes/README.md
