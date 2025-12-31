@@ -1,0 +1,24 @@
+---
+authors:
+  - name: Arturo Ruiz
+    affiliations:
+      - Instituto Balseiro
+      - Comisión Nacional de Energía Atómica
+    email: arturo.ruiz@ib.edu.ar
+  - name: Gonzalo Usaj
+    affiliations:
+      - Instituto Balseiro
+      - Comisión Nacional de Energía Atómica
+      - CONICET
+    email: gonzalo.usaj@ib.edu.ar
+---
+(main-readme)=
+# Cavity Polaritons Research Documentation
+Research repository on the subject of cavity polaritons optomechanically coupled via cavity phonons in linear arrays. We explore the population and energy dynamics of these systems in the context of research done in the Optics and Photonics group at the Bariloche Atomic Center. This research is based on the theoretical modeling of polariton arrays using a tight-binding and semiclassical approximation of the Gross-Pitaevski equation.
+## Objectives
+For this research we intend to achieve the following set of goals:
+1. Model the population, stability and energy dynamics obtained from previous measurements done in the Optics and Photonics group
+2. Write software that facilitates the analysis of potentially more complex polariton arrangements, couplings and driving schemes to be used by other people
+3. Engineer arrangements and driving protocols with potential of generating interesting emerging phenomena from these systems
+
+More relevant results born from this research will eventually be uploaded to Arxiv and (hopefully) be presented as a journal article. For more information about the model refer to [this page](polaritons-intro) and to [the associated page](https://arthor1127.github.io/polaritons/).
