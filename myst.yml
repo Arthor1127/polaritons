@@ -1,29 +1,32 @@
 version: 1
 project:
-  id: 999f80da-5358-4750-a4f4-b1d9ab1c1ddb
+  id: 999f80da-5358-4750-a4f4-b1d9ab1c1ddb  
   title: Cavity Polaritons Research
   description: Documentation site for the research on polariton arrays with optomechanical coupling
   github: https://github.com/Arthor1127/polaritons
+  exclude:
+    - "!figures/**"
+  include:
+    - "figures/**/*.png"
+    - "figures/**/*.jpg"
+    - "figures/**/*.svg"
+  files:
+    - "figures/**/*.png"
+    - "figures/**/*.jpg"
+    - "figures/**/*.svg"
   toc:
     - file: README.md
     - file: intro.md
-    - title: Data
-      children:
-        - file: data/README.md
-    - title: Figures
-      children:
-        - file: figures/README.md
+    - file: figures/export/gallery.ipynb
     - title: Notebooks
       children:
         - file: notebooks/README.md
         - title: Exploration
           children:
-            - file: notebooks/exploration/cpp_notebook.ipynb
-            - file: notebooks/exploration/two_site_non_resonant.ipynb
-            - file: notebooks/exploration/two_site_resonant.ipynb
+            - file: notebooks/exploration/graficos_poster_rafa.ipynb
         - title: Analysis
-          children:
-            - file: notebooks/analysis/new_notebook.ipynb
+          # children:
+          #   - file: notebooks/analysis/graficos_poster_rafa.ipynb
     - title: Notes
       children:
         - file: notes/README.md
@@ -33,6 +36,9 @@ project:
         - title: Weekly
           children:
             - file: reports/weekly/report_12.22-12.28.md
+        - title: Export
+          children:
+            - file: reports/export/poster_rafa_2025.md
     - title: Scripts
       children:
         - title: Cpp

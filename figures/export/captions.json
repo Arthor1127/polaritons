@@ -1,0 +1,16 @@
+{
+  "full_polariton_heterostructure.png": "Semiconductor heterostructure cavity",
+  "polariton_heterostructure.png": "Reduced version",
+  "drivings_branches.png": "Polariton branch dynamics",
+  "reflection_coeff.png": "Reflection spectrum",
+  "cascade_squares.png": "Energy schematic for polariton square lattice",
+  "cascade_wedge.png": "Energy schematic for polariton wedge cavity",
+  "full_polariton_heterostructure_web.png": "Semiconductor heterostructure cavity web version",
+  "polariton_heterostructure_web.png": "Reduced and web version",
+  "drivings_branches_web.png": "Polariton branch dynamics web version",
+  "reflection_coeff_web.png": "Reflection spectrum web version",
+  "cascade_squares_web.png": "Energy schematic for polariton square lattice web version",
+  "cascade_wedge_web.png": "Energy schematic for polariton wedge cavity web version",
+  "polariton_network_example.png": "Arbitrary lattice geometry, coupling and driving scheme for a polaritonic system",
+  "polariton_network_example_web.png": "Arbitrary lattice geometry, coupling and driving scheme for a polaritonic system web version"
+}

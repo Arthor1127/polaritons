@@ -1,0 +1,2 @@
+# Weekly report (12/29/25 - 01/04/26)
+This week's progress consisted in constructing a Jupyter-book based website with the objective of facilitating the progress tracking and also the internal and external communication of research results. From now on we'll be primarily using this channel to present the research contents.

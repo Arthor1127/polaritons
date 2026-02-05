@@ -1,1 +1,2 @@
-# notes
+# About
+In this section I'll present notes taken on the subject. The concepts subsection corresponds to notes taken on general subjects that serve as foundations for the understanding of the literature. Notes taken directly from literature sources will be written in the corresponding section.

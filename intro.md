@@ -1,6 +1,6 @@
 (polaritons-intro)=
 # Introduction
-The topics of this research project are the population, energy and stability dynamics of cavity polariton arrays optomechanically coupled via cavity phonons. Schematically the process creates exciton-polaritons by cascading down a ladder of polaritonic states via phonon emission. The initial polaritonic population is generated via coherent or incoherent pumping on a state of high energy. Due to the backaction between the polaritonic and phononic field, the outcome of this whole process is the coherent phonon generation in the cavity thus rendering this system as a phonon cascade laser (PCQL).
+The topic of this research project is the phenomenology of the population, energy and stability dynamics of cavity polariton arrays optomechanically coupled via cavity phonons. Schematically the process creates exciton-polaritons by cascading down a ladder of polaritonic states via phonon emission. The initial polaritonic population is generated via coherent or incoherent pumping on a state of high energy. Due to the backaction between the polaritonic and phononic field, the outcome of this whole process is the coherent phonon generation in the cavity thus rendering this system as a phonon cascade laser (PCQL).
 ## Cavity polaritons and cavity phonons 
 Cavity polaritons are mixed quasi particles born from the combination of a photon and some crystal excitation. In our case we'll concern us with Wannier-Mott excitons which are a hydrogen-like bound states originated from the Coulomb interaction between a conduction band electron and a valence band hole. Due to a very strong collective dipole interaction between these excitons and the microcavity photon fields, a strong light-matter coupling is achieved and anticrossing in both component's disperssions is observed at their degeneracy points see [Figure 1](fig-polariton-branches). This originates two bands called the lower and upper polariton branches ([Deng2010](http://dx.doi.org/10.1103/RevModPhys.82.1489)). Their mixed nature conferes a very interesting set of properties to these quasiparticles like high temperature Bose-Einstein condensation, superfluidity and other qualities that belong to the realm of the quantum fluids of light ([Carusotto2012](https://doi.org/10.1103/RevModPhys.85.299)).
 
@@ -92,12 +92,12 @@ $$
 $$
 \Omega_k \sim \vert \omega_i - \omega_j\vert,\quad \forall (i,j) \in G_k.
 $$
-In this regime, the polariton modes will develop their dynamics in Fourier components near or centered their natural frequencies and thus it will prove to be more convenient to express these equations in the rotating frame of the polariton modes by defining the substitution $a_i = \varphi_i e^{-i\omega_i t}$ and thus the equations become:
+In this regime, the polariton modes will develop their dynamics in Fourier components near or centered around their natural frequencies and thus it will prove to be more convenient to express these equations in the rotating frame of the polariton modes by defining the substitution $a_i = \varphi_i e^{-i\omega_i t}$ and thus the equations become:
 (rf-polariton-equations)=
 $$
 i\dot \varphi_i = \left\{\frac{i}{2}(R_i n_i - \gamma_i) + U_i \vert \varphi_i \vert^2 \right\} + F_i e^{-i(\omega_d^i - \omega_i)t} + \sum_{\langle i, j \rangle}\left(J_{ij}^0 + g_{ij} x_{k(ij)}\right)e^{-i(\omega_j - \omega_i)t} \varphi_j
 $$
 (rf-phonon-equations)=
 $$
-\ddot x_k = -\Omega_k^2 x_k - \Gamma_k \dot x_k - 4\Omega_k\sum_{(i, j) \in G_k}  g_{ij}\operatorname{Re}\left(\varphi_i \varphi_j^*e^{-i(\omega_i -\omega_j)t}\right)
+\ddot x_k = -\Omega_k^2 x_k - \Gamma_k \dot x_k - 4\Omega_k\sum_{(i, j) \in G_k}  g_{ij}\operatorname{Re}\left(\varphi_i \varphi_j^*e^{-i(\omega_i -\omega_j)t}\right).
 $$

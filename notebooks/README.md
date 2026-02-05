@@ -1,1 +1,2 @@
-# notebooks
+# About
+This sections shows the Jupyter Notebooks used in this research. The exploration section shows notebooks that don't necesarilly contain ready-to-present results and whose main purpose is to test new ideas and to try out new ideas. The analysis section contains notebooks with a proper result narrative and whose main objective is to present the results cleanly.
